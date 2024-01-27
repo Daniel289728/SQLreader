@@ -4,9 +4,6 @@
 MYSQL_USER='Almeida'
 MYSQL_PASSWORD='Almeida'
 
-# Set the directory to clone the GitHub repository
-CLONE_DIRECTORY=~/Documents/SQL_viewer
-
 # Install required packages
 sudo apt-get update
 sudo apt-get full-upgrade -y
