@@ -1,0 +1,24 @@
+sudo apt-get install pkg-config libmysqlclient-dev
+sudo apt install python3-pip
+pip install mysqlclient
+pip install mysql-connector-python
+sudo apt-get install mysql-server
+sudo service mysql start
+
+download gihub. It contains plantilla_isw.sql and SQL_viewer.py
+
+sudo mysql
+/**********Inside sql bash**********/
+	CREATE USER 'your_user'@'localhost' IDENTIFIED BY 'your_password';
+	CREATE DATABASE db_isw;
+	GRANT ALL PRIVILEGES ON db_isw.* TO 'your_user'@'localhost';
+	FLUSH PRIVILEGES;
+	USE db_isw;
+	SHOW TABLES; #should be empty
+	source /path/to/plantilla_isw.sql;
+	SHOW TABLES; #tables should appear
+	exit;
+/**********Inside sql bash**********/
+
+
+run SQL_viewer.py
